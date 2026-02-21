@@ -1,0 +1,28 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+      - ./data:/app/data
+    env_file: .env
+    depends_on:
+      - litellm-proxy
+
+  litellm-proxy:
+    image: ghcr.io/berriai/litellm:main-latest
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./litellm_config.yaml:/app/config.yaml
+    command: [ "--config", "/app/config.yaml" ]
+
+  # If you don't already have Ollama running globally:
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+volumes:
+  ollama_data:
