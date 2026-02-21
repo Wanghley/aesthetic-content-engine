@@ -1,0 +1,11 @@
+torch
+torchvision
+transformers
+pillow
+scikit-learn
+tqdm
+sentence-transformers  # For CLIP embeddings
+pandas                 # To manage the metadata manifest
+litellm
+python-dotenv
+openai
