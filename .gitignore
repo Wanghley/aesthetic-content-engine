@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cython debug symbols
+cython_debug/
+
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Conda environment folders
+.conda/
+conda-env/
+conda/
+envs/
+
+# Conda environment files
+conda-meta/
+*.conda
+*.env
+environment.yml
+environment.yaml
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Output directories
+output/
+
+# Data directories (if you want to ignore data)
+data/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Test and coverage reports
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Pipenv and Poetry
+Pipfile.lock
+poetry.lock
+
+# Mypy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# Pytype
+.pytype/
+
+# Other
+*.log
+*.sqlite3
+*.db
+*.egg-info/
+dist/
+build/
+*.egg
