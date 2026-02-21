@@ -4,8 +4,11 @@ transformers
 pillow
 scikit-learn
 tqdm
-sentence-transformers  # For CLIP embeddings
-pandas                 # To manage the metadata manifest
+sentence-transformers
+pandas
 litellm
 python-dotenv
 openai
+pillow-heif      # For iPhone .HEIC support
+rawpy            # For professional .RAW support
+opencv-python    # For .MOV and .MP4 frame extraction
